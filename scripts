@@ -2,7 +2,7 @@
 mkdir /demo_directory
 
 if [ $? -eq 0 ]; then 
-    echo "Directory create successfully"
+    echo "Directory created successfully"
 else
-    echo "Failed to create directory"
+    echo "Failed to created directory"
 fi
