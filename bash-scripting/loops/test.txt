@@ -1,0 +1,8 @@
+while
+for loop
+Universal update scripts[amazon linux2]
+redhat
+ubuntu
+windows
+solaris
+centOS

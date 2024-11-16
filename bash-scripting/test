@@ -1,0 +1,6 @@
+#!/bin/bash
+
+users_name=kenny
+
+
+echo "Welcome $users_name. Lets get started with bash-scripting"

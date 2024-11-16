@@ -1,0 +1,255 @@
+Against next class please attempt to do these  four basic Bash scripting tasks that build on simple input handling, conditional checks, and variable usage. Each task includes instructions, objectives, and example outputs for guidance.
+
+
+
+Task 1: User Greeting Script
+Objective: Create a script that prompts the user for their name and then greets them.
+
+Instructions:
+1. Create a variable to store the user’s name.
+2. Use `read` to capture the user’s input.
+3. Print a greeting message that includes the user’s name.
+
+Example Output:
+
+Enter your name: John
+Hello, John! Welcome to our program.
+
+
+---
+
+Task 2: Age Verification
+Objective: Prompt the user for their age and check if they are 18 or older.
+
+Instructions:
+1. Use a variable to capture the user's age.
+2. Check if the age is 18 or more using an `if` statement.
+3. Print a message allowing or denying access based on their age.
+
+Example Output:
+
+Enter your age: 20
+You are eligible to access this content.
+
+
+If the user is under 18:
+
+Enter your age: 15
+Sorry, you must be at least 18 years old to access this content.
+
+
+---
+
+Task 3: Simple Multiplication Calculator**
+Objective: Use variables to create a basic calculator that multiplies two numbers.
+
+Instructions:
+1. Prompt the user to enter two numbers.
+2. Multiply the numbers and store the result in a new variable.
+3. Print the result in a sentence.
+
+Example Output:
+
+Enter the first number: 5
+Enter the second number: 4
+The result of multiplying 5 and 4 is 20.
+
+
+---
+
+Task 4: Login System with Multiple Attempts
+Objective: Extend the login system with a limited number of attempts (e.g., 3).
+
+Instructions:
+1. Define stored credentials (`stored_username` and `stored_password`).
+2. Allow the user up to 3 attempts to enter the correct username and password.
+3. If the credentials are correct, print a welcome message.
+4. If the user fails 3 times, display an error message and exit.
+
+Example Output:
+```bash
+Welcome to XYZ Bank
+Enter your username: user123
+Enter your password: *****
+Login failed. Invalid username or password.
+
+Enter your username: user123
+Enter your password: *****
+Login failed. Invalid username or password.
+
+Enter your username: user123
+Enter your password: *****
+Login failed. You have exceeded the maximum number of attempts.
+
+
+variables
+if - else statements
+exit codes in bash
+0 = success
+1 = general error
+2 = misuse of built in commands
+126 = command not found or not executable
+127 = command not found
+128 = invalid arguement
+130 - terminated by ctrl+c
+
+loops = while
+if, else , elif
+============================================
+
+Please attempt the following tasks to help you understand variables and if/else statements in BASH-SCRIPTING.
+
+Task 1: Simple Subtraction Calculator
+Objective: Create a script that subtracts two numbers entered by the user.
+
+Instructions:
+
+Prompt the user to enter two numbers.
+Store each number in a variable.
+Subtract the second number from the first and store the result in a new variable.
+Print the result in a sentence.
+
+
+Example Output:
+Enter the first number: 10
+Enter the second number: 3
+The result of subtracting 3 from 10 is 7.
+
+==========================
+2. Simple Morning or Evening Greeting
+Objective: Greet the user based on whether it's morning or evening.
+
+Instructions:
+
+Ask the user to enter the current hour (in 24-hour format, e.g., 8 for 8 AM or 18 for 6 PM).
+Use an if statement to print "Good morning!" if the hour is less than 12; otherwise, print "Good evening!"
+Display the greeting message.
+Example Output:
+
+
+Enter the current hour (0-23): 9
+Good morning!
+
+=====================================
+Task 3: Color Check
+Objective: Write a script that checks if the user’s favorite color is blue.
+
+Instructions:
+
+Prompt the user to enter their favorite color.
+Use an if statement to check if the color is "blue."
+If the color is blue, print "Great choice!"; otherwise, print "[Color] is nice too!"
+Example Output:
+
+
+Enter your favorite color: blue
+Great choice!
+If the color is not blue:
+
+
+Enter your favorite color: red
+Red is nice too!
+===============================
+
+Task 4: Number Comparison
+Objective: Create a script that checks if one number is greater than or equal to another.
+
+Instructions:
+
+Ask the user to enter two numbers.
+Use an if statement to determine if the first number is greater than or equal to the second number.
+Print "The first number is greater or equal to the second" if true; otherwise, print "The first number is less than the second."
+Example Output:
+
+
+Enter the first number: 10
+Enter the second number: 5
+The first number is greater or equal to the second.
+==========================================
+6. Task : Weekend or Weekday Checker
+Objective: Write a script that checks if the entered day is a weekend.
+
+Instructions:
+
+Prompt the user to enter a day of the week.
+Use an if statement to check if the day is "Saturday" or "Sunday."
+If it's the weekend, print "It's the weekend!"; otherwise, print "It's a weekday."
+Example Output:
+
+
+Enter a day of the week: Saturday
+It's the weekend!
+=====================================
+
+Arithetic Operators
+====================
+Variables
+If/Else statements
+elif
+========
+intergers
+===========
+1. Addition = +
+   result=$((a + b))
+2. Subtraction = -
+   result =$((a - b))   
+3. Multiplication = *
+   result=$((a * b))
+4.Division = /
+  result=$((a / b))
+Modulus = %
+result=$((a % b))
+
+
+Equal= check if two vaules are equal
+"-eq"
+if [ "$a" -eq "$b]; then
+    echo "a is equal b"
+fi   
+ Not Equal
+ "-ne"
+ if [ "$a" -ne "$b"]; then
+    echo "a is not equal to b"
+fi    
+
+Not Greater than
+"-gt"
+
+Greater than of equal to
+"-ge" or >
+
+Less than
+"-lt" or <
+Less than or equal to 
+"-le"
+
+==================================================
+if / else/ elif
+
+elif - or if else
+
+mom take out cloths
+
+if is sunny- take out cloths
+if cloudy but not rainy - 
+windy not raining -
+else
+if its rainy-
+====================
+echo "Enter the Temperature in Celsius: "
+read temp
+
+if [ "$temp" -lt 0 ]; then 
+     echo "It is freezing"
+elif [ "$temp" -ge 0 ] && [ "$temp -lt 15 ]; then
+     echo "It is cold"
+elif [ "$temp" -ge 15 ] && [ "$temp" -lt 25 ]; then 
+     echo "the temperature is mild "  
+elif [ "$temp -ge 25 ]  && [ "$temp" -lt 35 ]; then 
+     echo "It is warm"   
+else 
+    echo "It is hot"
+fi
+============
+while loops
+for loops

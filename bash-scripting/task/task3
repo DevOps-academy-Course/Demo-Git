@@ -1,0 +1,12 @@
+#!/bin/bash
+
+
+book_title="To kill a Mockingbird"
+author="Harper Lee"
+year_published=1960
+
+#print the book details
+
+echo "My favourite book is \"$book_title\" by $author , published in $year_published."
+
+

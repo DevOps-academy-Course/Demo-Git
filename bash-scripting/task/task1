@@ -1,0 +1,11 @@
+#!/bin/bash
+#Task 1: Personal introduction script
+#variables for my personal details
+
+name="Pasima"
+age=38
+hobby="reading tech blogs"
+
+#print intro
+
+echo "My name is $name, I am $age years, and i enjoy $hobby ."
