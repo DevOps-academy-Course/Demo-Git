@@ -1,0 +1,13 @@
+#!/bin/bash
+#Task 2: Simple calculator
+
+num1=15
+num2=7
+
+#calculate the sum (total)
+
+sum=$((num1 + num2))
+
+#print the result
+
+echo "The sum of $num1 and $num2 is $sum"
