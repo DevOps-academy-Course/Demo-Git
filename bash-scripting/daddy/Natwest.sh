@@ -1,7 +1,7 @@
 #!/bin/bash
 
-correct_username="pasima"
-correct_password="pasima"
+correct_username="Steph"
+correct_password="Steph"
 
 echo "Welcome to Natwest Bank!"
 echo "How can we help you today"

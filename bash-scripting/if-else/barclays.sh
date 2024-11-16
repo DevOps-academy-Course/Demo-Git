@@ -1,8 +1,8 @@
 #!/bin/bash
 
 # Stored credentials
-stored_username="Pasima"
-stored_password="pas123"
+stored_username="Philip"
+stored_password="phil123"
 
 # Prompt for username
 echo "Welcome to Barclays Bank"
