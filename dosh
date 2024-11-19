@@ -1,0 +1,19 @@
+# 2. Comparison Operators (Integer Comparisons)
+These operators are used with if statements to compare integer values.
+
+- Equal (``): Checks if two values are equal.
+
+  if [ "$a" -eq "$b" ]; then
+      echo "a is equal to b"
+  fi
+
+
+- Not Equal (`-ne`): Checks if two values are not equal.
+
+  if [ "$a" -ne "$b" ]; then
+      echo "a is not equal to b"
+  fi
+
+
+- Greater Than (`-gt`): Checks if the first value is greater than the 
+
