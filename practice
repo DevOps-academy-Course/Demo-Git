@@ -1,0 +1,91 @@
+To install **Apache (HTTPD)** on an **Amazon Linux** instance, follow the steps below:
+
+### **Steps to Install Apache on Amazon Linux**
+
+1. **Connect to your EC2 instance**:
+   - Use SSH to connect to your EC2 instance.
+   - Example command:
+     ```bash
+     ssh -i "your-key.pem" ec2-user@<EC2-public-IP>
+     ```
+
+2. **Update the system packages**:
+   - Before installing new software, ensure that all packages are up-to-date.
+     ```bash
+     sudo yum update -y
+     ```
+
+3. **Install Apache (HTTPD)**:
+   - Use the following command to install the Apache web server:
+     ```bash
+     sudo yum install httpd -y
+     ```
+
+4. **Start the Apache service**:
+   - Once Apache is installed, start the service using the command:
+     ```bash
+     sudo systemctl start httpd
+     ```
+
+5. **Enable Apache to start on boot**:
+   - Ensure Apache starts automatically when the server is rebooted.
+     ```bash
+     sudo systemctl enable httpd
+     ```
+
+6. **Verify Apache Installation**:
+   - You can verify if Apache is running by checking its status:
+     ```bash
+     sudo systemctl status httpd
+     ```
+   - Output should indicate that the service is **active (running)**.
+
+7. **Adjust Firewall to Allow HTTP/HTTPS Traffic**:
+   - Ensure that your **EC2 Security Group** allows inbound traffic on port 80 (HTTP) and port 443 (HTTPS).
+     - **Go to the EC2 Management Console**:
+       - Select your instance.
+       - Under **Security** > **Security Groups**, modify inbound rules to allow traffic on **port 80 (HTTP)** and **port 443 (HTTPS)**.
+   
+8. **Test Apache Installation**:
+   - Once Apache is running, you can test the installation by opening your web browser and navigating to your instance's public IP address or domain name:
+     ```
+     http://<EC2-public-IP>
+     ```
+   - You should see the Apache default welcome page (or `/var/www/html/index.html` if you’ve created one).
+
+9. **Create or Modify Website Files**:
+   - The default Apache web directory on Amazon Linux is `/var/www/html/`.
+   - You can place or modify your website files in this directory:
+     ```bash
+     sudo nano /var/www/html/index.html
+     ```
+
+---
+
+### **Apache Commands Overview**
+
+- **Start Apache**:
+  ```bash
+  sudo systemctl start httpd
+  ```
+
+- **Stop Apache**:
+  ```bash
+  sudo systemctl stop httpd
+  ```
+
+- **Restart Apache**:
+  ```bash
+  sudo systemctl restart httpd
+  ```
+
+- **Check Apache Status**:
+  ```bash
+  sudo systemctl status httpd
+  ```
+
+- **Enable Apache on Boot**:
+  ```bash
+  sudo systemctl enable httpd
+  ```
+
